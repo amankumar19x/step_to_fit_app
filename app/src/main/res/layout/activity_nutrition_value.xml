@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NutritionValueActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nutritional Value Calculator\n(Diet and Weight Management)"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search Food"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="22dp"/>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:id="@+id/edtSearch"
+            android:padding="3dp"
+            android:hint="e.g., apples or rice"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rount_bg"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:id="@+id/btnSearch"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="10dp"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        android:id="@+id/txtFoodName"
+        android:layout_gravity="center"
+        android:textSize="22dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calories: "
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/txtCalorie"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Serving Weight(g): "
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/txtWeight"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Fat(g): "
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/txtTotalFat"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fat Saturated(g): "
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/txtSatFat"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Protein(g): "
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/txtProtein"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sodium(mg): "
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/txtSodium"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Potassium(mg): "
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/txtPotassium"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cholesterol(mg): "
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/txtCholesterol"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Carbohydrates(g): "
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/txtCarbohydrates"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fiber(g): "
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/txtFiber"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sugar(g): "
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/txtSugar"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

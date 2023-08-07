@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/orange_bg"
+    android:orientation="vertical"
+    tools:context=".ForgotActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:hint="Enter Email"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawableTint="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:id="@+id/edtForgotEmail"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:hint="Enter Phone Number"
+        android:drawableLeft="@drawable/baseline_call_24"
+        android:drawableTint="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:id="@+id/edtForgotPhone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/txtPassword"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/btnGetPass"
+        android:textColor="@color/white"
+        android:text="Get Password"
+        android:textSize="20dp"
+        android:layout_marginTop="350dp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

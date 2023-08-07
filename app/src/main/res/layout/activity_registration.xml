@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/orange_bg"
+    android:orientation="vertical"
+    tools:context=".RegistrationActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="Registration"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rount_bg"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:ems="12"
+        android:inputType="text"
+        android:hint="Name"
+        android:id="@+id/edtRegName"
+        android:padding="5dp" />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rount_bg"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:ems="12"
+        android:inputType="text"
+        android:hint="Email"
+        android:id="@+id/edtRegEmail"
+        android:padding="5dp" />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rount_bg"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/baseline_call_24"
+        android:ems="12"
+        android:inputType="number"
+        android:hint="Phone No."
+        android:id="@+id/edtRegPhone"
+        android:padding="5dp" />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rount_bg"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/baseline_security_24"
+        android:ems="12"
+        android:inputType="textPassword"
+        android:id="@+id/edtRegPass"
+        android:hint="Password"
+        android:padding="5dp" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rount_bg"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/baseline_security_24"
+        android:ems="12"
+        android:inputType="textPassword"
+        android:id="@+id/edtRegConfirmPass"
+        android:hint="Confirm Password"
+        android:padding="5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Register"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#673AB7"
+        android:id="@+id/btnRegister"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account?"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:fontFamily="monospace"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:text="Sign In"
+        android:textSize="20dp"
+        android:backgroundTint="#673AB7"
+        android:id="@+id/btnRegLogin"/>
+
+</LinearLayout>
